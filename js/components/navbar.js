@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu   = document.querySelector('.nav-menu');
 
-    // Si seguís usando el botón para menú móvil:
+    // Menu hamburguesa 
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('show');
     });
 
-    // --- Dropdown con hover ---
+    // Despliegue Dropdown menu
     const dropdowns = document.querySelectorAll('.dropdown');
 
     dropdowns.forEach(dropdown => {
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     menu.classList.remove('show');
                 }
             });
+            // Abre el dropdown actual
             dropdownMenu.classList.add('show');
         });
 
