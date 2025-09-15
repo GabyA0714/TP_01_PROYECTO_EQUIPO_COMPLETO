@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,22 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <script type="module" src="js/index.js"></script>
+  
 </head>
+
 <body class="theme-light">
-  <header class="nav container">
-    <a class="brand" href="index.html">Equipo 5 - TP01</a>
-    <nav class="menu">
-      <a href="index.html" aria-current="page">Portada</a>
-      <a href="bitacora.html">Bitácora</a>
-    </nav>
-  </header>
+    <header class="nav container">
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo" href="index.html">
+            <img src="./img/logo.jpg" alt="Logo" />
+            <span class="logo-text">Frontend - Equipo 5</span>
+          </a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <svg class="hamburger-icon" viewBox="0 0 36 36">
+              <line x1="3" y1="9" x2="33" y2="9" />
+              <line x1="3" y1="18" x2="33" y2="18" />
+              <line x1="3" y1="27" x2="33" y2="27" />
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Portada</a></li>
+              <li class="nav-item dropdown"><a class="dropdown-toggle" href="#"><span class="nav-link-dropdown">Integrantes</span><span class="triangulo">▼</span></a>
+                <ul class="dropdown-menu"id="dropdownIntegrantes"> </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="bitacora.html">Bitácora</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
   <main class="container">
     <section class="hero card">
       <h1>Trabajo Práctico 01</h1>
-      <p class="lead">Somos el equipo 5 de la materia FrontEnd y este es nuestro TP01. Este sitio es nuestra entrega grupal.</p>
-      
+      <p class="lead">Somos el equipo 5 de la materia FrontEnd y este es nuestro TP01. Este sitio es nuestra entrega
+        grupal.</p>
+
       <div class="actions">
         <button id="btnTema" class="btn">Cambiar tema</button>
         <button id="btnSaludo" class="btn outline">Mostrar saludo</button>
@@ -42,5 +64,8 @@
   <footer class="container footer">
     <small>&copy; 2025 — Equipo 5 - TP01</small>
   </footer>
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="js/components/navbar.js"></script>
 </body>
+
 </html>
