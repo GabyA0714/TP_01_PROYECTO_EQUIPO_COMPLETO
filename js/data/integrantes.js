@@ -6,7 +6,7 @@ export const integrantes = [
     edad: 44,
     foto: "img/Gaby.jpg",
     habilidades: ["HTML", "CSS", "JavaScript", "GitHub"],
-    peliculas: ["Matrix", "El Origen", "Interestelar"],
+    peliculas: ["Sexto sentido", "El Conjuro", "IT"],
     musica: ["Metallica", "Guns and Roses", "Los Redonditos de Ricota"]
   },
   {
