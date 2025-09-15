@@ -8,10 +8,30 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <a href="index.html">Inicio</a>
-      <a href="bitacora.html" class="active">Bitácora</a>
-    </nav>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a class="nav-logo" href="index.html">
+            <img src="./img/logo.jpg" alt="Logo" />
+            <span class="logo-text">Frontend - Equipo 5</span>
+          </a>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <svg class="hamburger-icon" viewBox="0 0 36 36">
+              <line x1="3" y1="9" x2="33" y2="9" />
+              <line x1="3" y1="18" x2="33" y2="18" />
+              <line x1="3" y1="27" x2="33" y2="27" />
+            </svg>
+          </button>
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">Portada</a></li>
+              <li class="nav-item dropdown"><a class="dropdown-toggle" href="#"><span class="nav-link-dropdown">Integrantes</span><span class="triangulo">▼</span></a>
+                <ul class="dropdown-menu"id="dropdownIntegrantes"> </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="bitacora.html">Bitácora</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
 
   <main class="container">
