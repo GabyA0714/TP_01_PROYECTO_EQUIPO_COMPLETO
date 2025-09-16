@@ -201,6 +201,18 @@ body {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
 
 /* Botones */
 .btn {
