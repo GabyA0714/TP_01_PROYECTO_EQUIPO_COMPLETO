@@ -4,11 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bitácora</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/bitacora.css" />
 	</head>
-	<body>
-		<header>
+	<body class="theme-light">
+		<header class="nav container">
 			<nav class="navbar">
 				<div class="nav-container">
 					<a class="nav-logo" href="index.html">
@@ -25,28 +31,20 @@
 					<div class="nav-menu">
 						<ul class="nav-links">
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="index.html"
-									aria-current="page"
-									>Portada</a
-								>
+								<a class="nav-link"	href="index.html" aria-current="page">Portada</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="dropdown-toggle" href="#"
-									><span class="nav-link-dropdown"
-										>Integrantes</span
-									><span class="triangulo">▼</span></a
-								>
+								<a class="dropdown-toggle" href="#">
+									<span class="nav-link-dropdown">Integrantes</span>
+									<span class="triangulo">▼</span>
+								</a>
 								<ul
 									class="dropdown-menu"
 									id="dropdownIntegrantes"
 								></ul>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="bitacora.html"
-									>Bitácora</a
-								>
+								<a class="nav-link" href="bitacora.html">Bitácora</a>
 							</li>
 						</ul>
 					</div>
@@ -56,6 +54,7 @@
 
 		<main id="bitacora">
 			<h1>Bitácora</h1>
+			<p class="description">Historial de decisiones, dificultades y cambios al desarrollar el projecto.</p>
 			<div id="log"></div>
 		</main>
 
