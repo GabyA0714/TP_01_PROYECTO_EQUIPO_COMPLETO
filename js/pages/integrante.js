@@ -32,7 +32,7 @@ function mostrarIntegrante() {
 
       <button id="btnExtra">Mostrar más</button>
       <div id="extra" style="display:none;">
-        <p>Me gusta programar proyectos creativos y aprender nuevas tecnologías 🚀</p>
+        <p>${integrante.mensajeExtra}</p>
       </div>
     </section>
   `;
