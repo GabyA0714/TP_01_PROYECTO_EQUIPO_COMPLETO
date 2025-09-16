@@ -38,9 +38,17 @@ function mostrarIntegrante() {
   `;
 
   document.getElementById("btnExtra").addEventListener("click", () => {
-    const extra = document.getElementById("extra");
-    extra.style.display = extra.style.display === "none" ? "block" : "none";
-  });
+  const extra = document.getElementById("extra");
+  const btn = document.getElementById("btnExtra");
+
+  if (extra.style.display === "none") {
+    extra.style.display = "block";
+    btn.textContent = "Mostrar menos";
+  } else {
+    extra.style.display = "none";
+    btn.textContent = "Mostrar más";
+  }
+});
 }
 
 mostrarIntegrante();
