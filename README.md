@@ -1,40 +1,20 @@
-# TP01 - Proyecto Web en Equipo
 
-## Descripción del Proyecto
-Este es el primer trabajo práctico grupal de Frontend. El objetivo fue crear un sitio web colaborativo que presente a cada integrante del equipo con una tarjeta personal, además de incluir una portada y una bitácora del proceso de desarrollo.
+## Funcionalidades en JavaScript
+- **Portada (`index.js`)**
+  - Genera dinámicamente las tarjetas de los integrantes.  
+  - Botón de **cambio de tema** (claro/oscuro) con persistencia en `localStorage`.  
+  - Botón de **saludo dinámico**, visible según el tema.  
 
-El proyecto utiliza un sistema dinámico: todos los integrantes se cargan desde un archivo JavaScript (`integrantes.js`) y se muestran en la página de integrante según el parámetro en la URL.
+- **Página de Integrante (`integrante.js`)**
+  - Carga al integrante según el `id` en la URL.  
+  - Renderiza todos sus datos: ciudad, edad, habilidades, películas y música favoritas.  
+  - Incluye un botón **"Mostrar más"** que despliega información adicional.  
+  - Compatible con el botón de **cambio de tema persistente**.  
 
-## Tecnologías Utilizadas
-- HTML5
-- CSS3 (con Google Fonts y responsive design)
-- JavaScript (módulos ES6)
-- Git & GitHub
-- Vercel (para deploy)
-
-## Estructura de Archivos
-```
-/
-├── index.html          # Portada principal
-├── integrante.html     # Página dinámica para cada integrante
-├── bitacora.html       # Sección de bitácora
-├── css/
-│   └── style.css
-├── js/
-│   ├── data/
-│   │   └── integrantes.js
-│   └── pages/
-│       └── integrante.js
-├── img/
-│   ├── gabriela.png
-│   └── juan.png
-└── README.md
-```
-
-## JavaScript
-- `index.html`: lista de integrantes con enlaces dinámicos (`integrante.html?id=...`).
-- `integrante.js`: toma el parámetro `id` de la URL, busca al integrante en el array y genera su tarjeta en el DOM.
-- Cada tarjeta incluye un botón **"Mostrar más"** que despliega información adicional (interactividad requerida).
+- **Bitácora (`bitacora.js`)**
+  - Muestra las decisiones, dificultades y cambios del proyecto.  
+  - Cada sección se puede **plegar/desplegar** con un click.  
+  - Compatible con el botón de **cambio de tema persistente**.  
 
 ## Enlace al Proyecto Desplegado
-👉 [Link en Vercel](https://tu-link-aqui.vercel.app)
+👉 [Ver en Vercel](https://tp-01-proyecto-equipo-completo-seven.vercel.app)
