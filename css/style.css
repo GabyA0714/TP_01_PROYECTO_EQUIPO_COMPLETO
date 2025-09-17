@@ -201,6 +201,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+
 .perfil {
   display: flex;
   flex-direction: column;
@@ -209,9 +210,38 @@ body {
   padding: 2rem;
   gap: 1rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto;
+
+  background: linear-gradient(to bottom right, #d8b4fe, #a5f3fc);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.perfil img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  max-width: 200px;
+  height: auto;
 }
 
+.perfil ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.perfil li {
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.perfil li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0076d2;
+  font-weight: bold;
+}
 
 
 /* Botones */
@@ -241,15 +271,21 @@ body {
   color: white;
 }
 
+
 #btnExtra {
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  background-color: #007bff;
+  background-color: #0076d2;
   color: white;
+  transition: background-color 0.3s ease;
+}
+
+#btnExtra:hover {
+  background-color: #005bb5;
 }
 #extra {
   margin-top: 1rem;
