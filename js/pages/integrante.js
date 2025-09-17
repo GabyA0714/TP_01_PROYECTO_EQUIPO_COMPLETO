@@ -37,18 +37,42 @@ function mostrarIntegrante() {
     </section>
   `;
 
+  // Botón de mostrar más/menos
   document.getElementById("btnExtra").addEventListener("click", () => {
-  const extra = document.getElementById("extra");
-  const btn = document.getElementById("btnExtra");
+    const extra = document.getElementById("extra");
+    const btn = document.getElementById("btnExtra");
 
-  if (extra.style.display === "none") {
-    extra.style.display = "block";
-    btn.textContent = "Mostrar menos";
-  } else {
-    extra.style.display = "none";
-    btn.textContent = "Mostrar más";
-  }
-});
+    if (extra.style.display === "none") {
+      extra.style.display = "block";
+      btn.textContent = "Mostrar menos";
+    } else {
+      extra.style.display = "none";
+      btn.textContent = "Mostrar más";
+    }
+  });
+}
+
+// -------------------------------
+// Interactividad del cambio de tema
+// -------------------------------
+function agregarEventos() {
+  const btnTema = document.getElementById("btnTema");
+
+  // Al cargar, aplicar el tema guardado en localStorage
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("theme-dark");
+    }
+  });
+
+  // Botón de cambiar tema
+  btnTema.addEventListener("click", () => {
+    document.body.classList.toggle("theme-dark");
+    const isDark = document.body.classList.contains("theme-dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
 }
 
 mostrarIntegrante();
+agregarEventos();

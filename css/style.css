@@ -1,5 +1,4 @@
 /* Fondo general */
-
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +7,20 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
-  color: #333;
+  background: #f5f5f5; /* gris claro sobrio */
+  color: #212121;      /* gris oscuro para texto */
   min-height: 100vh;
 }
 
 /* Tema oscuro */
 .theme-dark {
-  background: linear-gradient(135deg, #0d47a1, #1a237e);
-  color: #fff;
+  background: #121212; /* negro-gris estilo material design */
+  color: #e0e0e0;      /* gris claro */
 }
 
-/* Navegador dinamico */
-
+/* Navegador dinámico */
 .navbar {
-  background-color: #222;
+  background-color: #1976d2; /* azul petróleo */
   padding: 0rem 2rem;
 }
 
@@ -40,7 +38,7 @@ body {
   padding: 0.5rem 0;
 }
 
-.nav-logo>img {
+.nav-logo > img {
   height: 40px;
   width: auto;
   margin-right: 1rem;
@@ -51,8 +49,6 @@ body {
   font-weight: bold;
   color: #fff;
 }
-
-
 
 /* Estilos del menú de navegación */
 .nav-menu {
@@ -76,20 +72,18 @@ body {
 .nav-link {
   display: flex;
   align-items: center;
-  height: 100%;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: rgba(255, 255, 255, .55);
+  color: rgba(255, 255, 255, 0.8);
   transition: color .15s ease-in-out;
-  height: 100%;
 }
 
 .nav-link:hover {
-  color: rgba(255, 255, 255, .9);
+  color: #80cbc4; /* verde agua */
   text-decoration: underline;
 }
 
-/* Estilos del menu desplegable */
+/* Estilos del menú desplegable */
 .dropdown {
   position: relative;
 }
@@ -99,7 +93,7 @@ body {
   align-items: center;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: rgba(255, 255, 255, .55);
+  color: rgba(255, 255, 255, 0.8);
   transition: color .15s ease-in-out;
 }
 
@@ -110,14 +104,13 @@ body {
 }
 
 .dropdown-toggle:hover .nav-link-dropdown {
-  color: rgba(255, 255, 255, .9);
+  color: #80cbc4;
   text-decoration: underline;
 }
 
 .dropdown-toggle:hover .triangulo {
-  color: rgba(255, 255, 255, .9);
+  color: #80cbc4;
 }
-
 
 .dropdown-menu {
   position: absolute;
@@ -146,21 +139,20 @@ body {
 .dropdown-item {
   display: block;
   padding: 0.25rem 1rem;
-  color: #212529;
+  color: #212121;
   text-decoration: none;
   white-space: nowrap;
 }
 
 .dropdown-item:hover {
-  background-color: #f8f9fa;
+  background-color: #e0f2f1;
 }
 
-/* Menu hamburguesa */
-
+/* Menú hamburguesa */
 .menu-toggle {
   display: none;
   background: none;
-  border: 1px solid rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .3);
   border-radius: .25rem;
   cursor: pointer;
   line-height: 1;
@@ -174,33 +166,32 @@ body {
   position: relative;
   vertical-align: middle;
   stroke-width: 2;
-  stroke: rgba(255, 255, 255, .2);
+  stroke: rgba(255, 255, 255, .6);
 }
 
-/* Efecto hover sobre menu hamburguesa*/
 .menu-toggle:hover {
   box-shadow: 0 0 0 .1rem rgba(255, 255, 255, .5);
 }
 
-.menu-toggle:hover>.hamburger-icon {
-  stroke: rgba(255, 255, 255, .5);
+.menu-toggle:hover > .hamburger-icon {
+  stroke: #80cbc4;
 }
 
-
 /* Cards */
-
 .hero {
-  background: white;
+  background: #fff;
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .theme-dark .hero {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: #1e1e1e;
+  color: #e0e0e0;
 }
+
 .perfil {
   display: flex;
   flex-direction: column;
@@ -212,8 +203,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 /* Botones */
 .btn {
   padding: 0.6rem 1.2rem;
@@ -221,7 +210,7 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #1976d2;
+  background-color: #1976d2; /* azul petróleo */
   color: white;
   font-weight: 600;
 }
@@ -232,12 +221,12 @@ body {
 
 .btn.outline {
   background: transparent;
-  border: 2px solid #1976d2;
-  color: #1976d2;
+  border: 2px solid #26a69a; /* verde agua */
+  color: #26a69a;
 }
 
 .btn.outline:hover {
-  background: #1976d2;
+  background: #26a69a;
   color: white;
 }
 
@@ -248,9 +237,10 @@ body {
   cursor: pointer;
   border-radius: 8px;
   border: none;
-  background-color: #007bff;
+  background-color: #26a69a;
   color: white;
 }
+
 #extra {
   margin-top: 1rem;
   max-width: 500px;
@@ -261,7 +251,52 @@ body {
 .msg {
   margin-top: 1rem;
   font-weight: 600;
-  color: #1976d2;
+}
+
+body:not(.theme-dark) .msg {
+  color: #1976d2; /* azul en claro */
+}
+
+body.theme-dark .msg {
+  color: #80cbc4; /* verde agua en oscuro */
+}
+
+/* 🔹 Bitácora */
+.bitacora-section {
+  color: #212121;
+}
+
+.bitacora-section h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.bitacora-section ul {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.theme-dark .bitacora-section {
+  color: #e0e0e0;
+}
+
+.theme-dark .bitacora-section h2 {
+  color: #90caf9; /* celeste claro */
+}
+
+.theme-dark .bitacora-section ul {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bitacora-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.theme-dark .bitacora-section li:hover {
+  color: #80cbc4;
 }
 
 /* Tarjetas */
@@ -273,12 +308,16 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg, #2196f3, #64b5f6);
+  background: linear-gradient(135deg, #1976d2, #64b5f6);
   border-radius: 0px 0px 12px 12px;
   text-align: center;
   padding: 1rem;
   color: white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-dark .card {
+  background: linear-gradient(135deg, #1e88e5, #0d47a1);
 }
 
 .card:hover {
@@ -294,37 +333,31 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
 /* Media Query mayor a 1200 */
 @media (min-width: 1200px) {
   .logo-text {
     font-size: 1.7rem;
   }
 
-  .nav-logo>img {
+  .nav-logo > img {
     height: 50px;
     margin-right: 1.5rem;
   }
-
 
   .nav-links .nav-link,
   .nav-links .dropdown-toggle {
     padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
   }
-
 }
 
-
 /* Media Query hasta 900 */
-
 @media (max-width: 900px) {
   .nav-container {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
 
   .logo-text {
     white-space: normal;
@@ -334,7 +367,6 @@ body {
   }
 
   .nav-menu {
-    /* aseguramos que el logo y el botón hamburguesa estén en la misma línea */
     flex: 1 1 auto;
   }
 
@@ -371,7 +403,6 @@ body {
     text-align: center;
   }
 
-
   .dropdown-menu {
     position: static;
     transform: translateY(0);
@@ -387,7 +418,7 @@ body {
 
 /* Media Query menor a 400 */
 @media (max-width: 400px) {
-  .nav-logo>img {
+  .nav-logo > img {
     height: 30px;
     margin-right: .5rem;
   }
