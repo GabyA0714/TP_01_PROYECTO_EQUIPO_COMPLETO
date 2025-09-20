@@ -465,3 +465,10 @@ body.theme-dark .msg {
     font-size: 0.9rem;
   }
 }
+/* Ajustes para modo oscuro */
+body.theme-dark .perfil,
+body.theme-dark .perfil h2,
+body.theme-dark .perfil p,
+body.theme-dark .perfil li {
+  color: #666666; /* texto mas oscuro para mejor visualizacion */
+}
