@@ -10,6 +10,12 @@ body {
   background: linear-gradient(135deg, #e0f7fa, #e1bee7);
   color: #333;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Tema oscuro */
@@ -331,6 +337,14 @@ body.theme-dark .msg {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 /* Media Query mayor a 1200 */
