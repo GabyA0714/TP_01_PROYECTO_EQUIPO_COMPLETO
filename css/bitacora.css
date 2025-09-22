@@ -79,3 +79,9 @@
 		padding: 1rem;
 	}
 }
+
+body.theme-dark {
+	#bitacora h2, #bitacora li {
+		color: #333;
+	}
+}

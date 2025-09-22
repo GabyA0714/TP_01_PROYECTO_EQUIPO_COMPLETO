@@ -299,44 +299,6 @@ body.theme-dark .msg {
   color: #80cbc4; /* verde agua en oscuro */
 }
 
-/* 🔹 Bitácora */
-.bitacora-section {
-  color: #212121;
-}
-
-.bitacora-section h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.bitacora-section ul {
-  background: rgba(0, 0, 0, 0.05);
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  margin-top: 0.5rem;
-}
-
-.theme-dark .bitacora-section {
-  color: #e0e0e0;
-}
-
-.theme-dark .bitacora-section h2 {
-  color: #90caf9; /* celeste claro */
-}
-
-.theme-dark .bitacora-section ul {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.bitacora-section li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-
-.theme-dark .bitacora-section li:hover {
-  color: #80cbc4;
-}
-
 /* Tarjetas */
 .cards-grid {
   display: grid;
