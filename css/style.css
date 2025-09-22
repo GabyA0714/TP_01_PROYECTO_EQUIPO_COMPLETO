@@ -93,6 +93,7 @@ main {
 /* Estilos del menú desplegable */
 .dropdown {
   position: relative;
+  z-index: 1000;
 }
 
 .dropdown-toggle {
@@ -133,6 +134,7 @@ main {
   opacity: 0;
   visibility: hidden;
   display: none;
+  z-index: 1000;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
@@ -186,6 +188,11 @@ main {
 }
 
 /* Cards */
+.team-section {
+  padding: 0rem 2rem 2rem 2rem;
+  margin: 0 auto;
+}
+
 .hero {
   background: #fff;
   padding: 2rem;
@@ -260,14 +267,26 @@ main {
 
 .btn.outline {
   background: transparent;
-  border: 2px solid #26a69a; /* verde agua */
-  color: #26a69a;
+  border: 2px solid #007c6e; /* verde agua */
+  color: #007c6e;
 }
 
 .btn.outline:hover {
-  background: #26a69a;
+  background: #007c6e;
   color: white;
 }
+
+.theme-dark .btn.outline {
+  background: transparent;
+  border: 2px solid #07b6a1; /* verde agua */
+  color: #07b6a1;
+}
+
+.theme-dark .btn.outline:hover {
+  background: #07b6a1;
+  color: white;
+}
+
 
 #btnExtra {
   margin-top: 1rem;
@@ -298,7 +317,7 @@ main {
 }
 
 body:not(.theme-dark) .msg {
-  color: #1976d2; /* azul en claro */
+  color: #094b8d; /* azul en claro */
 }
 
 body.theme-dark .msg {
@@ -329,6 +348,10 @@ body.theme-dark .msg {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .card img.avatar {
