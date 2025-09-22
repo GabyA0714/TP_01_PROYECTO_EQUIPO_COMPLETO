@@ -18,6 +18,10 @@ main {
   flex: 1;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* Tema oscuro */
 .theme-dark {
   background: linear-gradient(135deg, #0d47a1, #1a237e);
